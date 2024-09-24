@@ -13,7 +13,8 @@ if (isset($_SESSION["usuario"])) {
         if (
             $_GET["ruta"] == "inicio" ||
             $_GET["ruta"] == "cerrarSesion" ||
-            $_GET["ruta"] == "usuarios"
+            $_GET["ruta"] == "usuarios" || 
+            $_GET["ruta"] == "registro"
         ) {
 
             include_once "vista/modulos/" . $_GET["ruta"] . ".php";

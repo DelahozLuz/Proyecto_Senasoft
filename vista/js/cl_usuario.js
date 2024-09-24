@@ -26,4 +26,24 @@ class usuario{
             }
         });
     }
+    registrarUsuario(){
+        let objData = new FormData();
+        objData.append("nombre",this._objData.nombre);
+        objData.append("apellido",this._objData.apellido);
+        objData.append("telefono",this._objData.telefono);
+        objData.append("email",this._objData.email);
+        objData.append("password",this._objData.password);
+        objData.append("registrarUsuario","ok");
+
+        fetch("controlador/usuarioControlador.php",{
+            method: 'POST',
+            body:objData
+        })
+        .then(response => response.json()).catch(error =>{
+            console.log(error)
+        })
+        .then(response =>{
+            alert(response["mensaje"]);
+        })
+    }
 }

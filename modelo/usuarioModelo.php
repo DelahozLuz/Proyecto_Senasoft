@@ -27,4 +27,31 @@ class usuarioModelo{
         }
         return $mensaje;
     }
+    
+}
+
+class usuarioRegistro{
+    public static function mdlRegistroUsuario($nombre,$apellido,$telefono,$email,$password){
+        
+        $mensaje = array();
+
+        try {
+            $objRespuesta = Conexion::conectar()->prepare("INSERT INTO usuario (nombre,apellido,telefono,email,password)VALUES(:nombre,:apellido,:telefono,:email,:password)");
+            $objRespuesta->bindParam(":nombre" ,$nombre);
+            $objRespuesta->bindParam(":apellido" ,$apellido);
+            $objRespuesta->bindParam(":telefono" ,$telefono);
+            $objRespuesta->bindParam(":email" ,$email);
+            $objRespuesta->bindParam(":password" ,$password);
+            
+            if($objRespuesta->execute()){
+                $mensaje = array("codigo"=>"200","mensaje"=>"El usuario se registro correctamente en la base de datos");
+            }else{
+                $mensaje = array("codigo"=>"401","mensaje"=>"Error al registrar el usuario en la base de datos");
+            }
+
+        } catch (Exception $e) {
+            $mensaje = array("codigo"=>"401",$e->getMessage());
+        }
+        return $mensaje;
+    }
 }

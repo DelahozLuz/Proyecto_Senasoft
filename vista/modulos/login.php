@@ -1,6 +1,6 @@
 <script src="vista/js/cl_usuario.js"></script>
-
-<div class="container mt-5">
+<div id="L">
+<div class="container mt-5" >
     <div class="card p-4 shadow">
         <form id="Fromlogin" class="row g-3 needs-validation"  novalidate>
             <h1 class="text-center">Login</h1>
@@ -33,13 +33,15 @@
                 <button class="btn btn-primary" type="submit">Ingresar</button>
             </div>
 
-            <div class="col-12 text-center">
-              <h6>Si no tienes cuenta Registrate</h6>
-              <button class="btn btn-info" type="submit" >Registrar</button>
-
-            </div>
 
         </form>
+        
+        <div class="col-12 text-center">
+              <h6>Si no tienes cuenta Registrate</h6>
+              <button class="btn btn-info" type="submit" id="registrarse">Registrar</button>
+
+            </div>
     </div>
+</div>
 </div>
 <script src="vista/js/login.js"></script>

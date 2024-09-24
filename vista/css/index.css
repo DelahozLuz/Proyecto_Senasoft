@@ -1,12 +1,12 @@
-/* Estilo general del contenedor */
-.container {
+/* Login */
+#L .container {
     max-width: 400px; /* Limita el ancho del contenedor */
     margin: 0 auto; /* Centra el contenedor en la página */
     padding-top: 50px; /* Agrega espacio superior */
 }
 
 /* Estilo para el cuadro del formulario */
-.card {
+#L .card {
     border-radius: 10px; /* Bordes redondeados */
     border: 1px solid #ddd; /* Borde gris claro */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
@@ -15,7 +15,7 @@
 }
 
 /* Estilo del título */
-h1 {
+#L h1 {
     font-size: 24px; /* Tamaño de fuente del título */
     font-weight: bold; /* Título en negrita */
     margin-bottom: 20px; /* Espacio inferior */
@@ -24,20 +24,20 @@ h1 {
 }
 
 /* Estilo de los labels */
-.form-label {
+#L .form-label {
     font-weight: 600; /* Grosor de los labels */
     color: #333; /* Color del texto */
 }
 
 /* Estilo de las cajas de texto */
-.form-control {
+#L .form-control {
     border-radius: 5px; /* Bordes redondeados */
     border: 1px solid #ccc; /* Borde gris claro */
     padding: 10px; /* Espaciado interno */
     box-shadow: none; /* Eliminar la sombra al enfocar */
 }
 
-.form-control:focus {
+#L .form-control:focus {
     border-color: #007bff; /* Color azul al enfocar */
     box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.25); /* Sombra suave */
 }
@@ -49,7 +49,7 @@ h1 {
 }
 
 /* Estilo del botón de ingresar */
-button {
+#L button {
     width: 100%; /* Botón de ancho completo */
     padding: 10px; /* Espaciado interno */
     background-color: #007bff; /* Color azul */
@@ -60,21 +60,155 @@ button {
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
 
-button:hover {
+#L button:hover {
     background-color: #0056b3; /* Azul más oscuro al pasar el cursor */
 }
 
 /* Estilo del enlace de 'Olvidó su contraseña' */
-.forgot-password {
+#L .forgot-password {
     text-align: center; /* Centrar el enlace */
     margin-top: 10px; /* Espaciado superior */
 }
 
-.forgot-password a {
+#L .forgot-password a {
     color: #007bff; /* Color azul */
     text-decoration: none; /* Sin subrayado */
 }
 
-.forgot-password a:hover {
+#L .forgot-password a:hover {
     text-decoration: underline; /* Subrayado al pasar el cursor */
 }
+
+/*Registro*/
+
+#R .card {
+    border-radius: 10px; 
+    border: 1px solid #ddd; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    background-color: #ffffff; 
+}
+
+#R #Registro{
+    max-width: 400px; /* Limita el ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    padding-top: 50px; /* Agrega espacio superior */
+}
+
+#R .form-control {
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde gris claro */
+    padding: 10px; /* Espaciado interno */
+    box-shadow: none; /* Eliminar la sombra al enfocar */
+}
+
+/*Estilo del boton*/
+#R button {
+    font-family: inherit;
+    font-size: 20px;
+    background: #212121;
+    color: white;
+    fill: rgb(155, 153, 153);
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    font-weight: 1000;
+  }
+  
+  #R button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #R button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #R button:hover {
+    background: #000;
+  }
+  
+  #R button:hover .svg-wrapper {
+    transform: scale(1.25);
+    transition: 0.5s linear;
+  }
+  
+  #R button:hover svg {
+    transform: translateX(1.2em) scale(1.1);
+    fill: #fff;
+  }
+  
+  #R button:hover span {
+    opacity: 0;
+    transition: 0.5s linear;
+  }
+  
+  #R button:active {
+    transform: scale(0.95);
+  }
+  
+
+
+  /* From Uiverse.io by cssbuttons-io */ 
+  #R #ll {
+    font-size: 17px;
+    padding: 1em 2.7em;
+    font-weight: 500;
+    background: #1f2937;
+    color: white;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.6em;
+    cursor: pointer;
+  }
+  
+  #R .gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 0.6em;
+    margin-top: -0.25em;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.3)
+    );
+  }
+  
+  #R .label {
+    position: relative;
+    top: -1px;
+  }
+  
+  #R .transition {
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-duration: 500ms;
+    background-color: rgba(16, 185, 129, 0.6);
+    border-radius: 9999px;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #R button:hover .transition {
+    width: 14em;
+    height: 14em;
+  }
+  
+  #R button:active {
+    transform: scale(0.97);
+  }
+  

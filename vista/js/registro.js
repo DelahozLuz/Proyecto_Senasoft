@@ -1,13 +1,9 @@
-document.getElementById("registrarse").addEventListener("click", function () {
-    window.location = "vista/modulos/registro.php";
-});
-
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
     'use strict'
 
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.querySelectorAll('#Fromlogin')
+    var forms = document.querySelectorAll('#FormRegistro')
 
     // Loop over them and prevent submission
     Array.prototype.slice.call(forms)
@@ -17,17 +13,17 @@ document.getElementById("registrarse").addEventListener("click", function () {
                 if (!form.checkValidity()) {
                     event.stopPropagation()
                     form.classList.add('was-validated')
-                } else {
-                    let email = document.getElementById("txtUsuario").value;
+                }else{
+                    let nombre = document.getElementById("txtNombre").value;
+                    let apellido = document.getElementById("txtApellido").value;
+                    let telefono = document.getElementById("txtTelefono").value;
+                    let email = document.getElementById("txtEmail").value;
                     let password = document.getElementById("txtPassword").value;
-                    let objData = { "iniciarSesion": "ok", "email": email, "password": password };
-                    let objUsuario = new usuario(objData);
-                    objUsuario.iniciarSesion();
+                    let objData = {"registrarUsuario":"ok","nombre":nombre,"apellido":apellido,"telefono":telefono,"email":email,"password":password};
+                    let objRegistrarUsuario = new usuario(objData);
+                    objRegistrarUsuario.registrarUsuario();
                 }
 
             }, false)
         })
 })()
-
-
-
