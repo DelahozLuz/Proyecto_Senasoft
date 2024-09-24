@@ -47,7 +47,7 @@
   </div>
   
   <div class="col-12">
-  <button type="submit">
+  <button type="submit" id="re">
   <div class="svg-wrapper-1">
     <div class="svg-wrapper">
       <svg
@@ -63,19 +63,16 @@
       </svg>
     </div>
   </div>
-  <span>Save</span>
+  <span>Guardar</span>
 </button>
   </div>
+  <button>gydwvdteftdfe6</button>
 
 
-  <button type="submit" id="ll">
-  <span class="transition"></span>
-  <span class="gradient"></span>
-  <span class="label"></span>
-</button>
+ 
   
 </form>
-</div>
+
 </div><!-- div Registro-->
 
 

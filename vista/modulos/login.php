@@ -36,9 +36,10 @@
 
         </form>
         
-        <div class="col-12 text-center">
+            <div class="col-12 text-center">
               <h6>Si no tienes cuenta Registrate</h6>
-              <button class="btn btn-info" type="submit" id="registrarse">Registrar</button>
+              <!-- <button class="btn btn-info" type="submit" id="registrarse">Registrar</button> -->
+               <a href="registro">hola</a>
 
             </div>
     </div>

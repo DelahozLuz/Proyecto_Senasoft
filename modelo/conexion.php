@@ -4,7 +4,7 @@ class Conexion {
     public static function conectar() {
         $nombreServidor = "localhost";
         $usuario = "root";
-        $baseDatos = "login";
+        $baseDatos = "senaSoft";
         $password = "";
 
         try {

@@ -1,6 +1,4 @@
-document.getElementById("registrarse").addEventListener("click", function () {
-    window.location = "vista/modulos/registro.php";
-});
+
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
@@ -29,5 +27,7 @@ document.getElementById("registrarse").addEventListener("click", function () {
         })
 })()
 
-
+document.getElementById("registrarse").addEventListener("click", function () {
+    window.location.href = "vista/modulos/registro.php";
+});
 
