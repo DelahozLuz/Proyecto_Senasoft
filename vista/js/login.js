@@ -27,7 +27,6 @@
         })
 })()
 
-document.getElementById("registrarse").addEventListener("click", function () {
-    window.location.href = "vista/modulos/registro.php";
-});
+
+
 

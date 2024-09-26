@@ -18,7 +18,7 @@
                     let apellido = document.getElementById("txtApellido").value;
                     let telefono = document.getElementById("txtTelefono").value;
                     let email = document.getElementById("txtEmail").value;
-                    let password = document.getElementById("txtPassword").value;
+                    let password = document.getElementById("txtPasswords").value;
                     let objData = {"registrarUsuario":"ok","nombre":nombre,"apellido":apellido,"telefono":telefono,"email":email,"password":password};
                     let objRegistrarUsuario = new usuario(objData);
                     objRegistrarUsuario.registrarUsuario();
@@ -27,3 +27,6 @@
             }, false)
         })
 })()
+
+
+
